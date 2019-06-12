@@ -7,18 +7,16 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CourseRowView: View {
-    
-    var course: Course
+    let course: Course
     
     var body: some View {
-        VStack (alignment: .leading) { 
-            Image(course.imageUrl)
-                .resizable()
-                .frame(width: 200, height: 200)
-                .clipped()
+        VStack (alignment: .leading) {
+            ImageViewWidget(imageUrl: course.imageUrl)
             Text(course.name)
+            .font(.system(.largeTitle, design: .rounded))
         }
     }
 }

@@ -7,20 +7,20 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView : View {
     
-    @State var network = NetworkManager()
+    @State var networkManager = NetworkManager()
     
     var body: some View {
         NavigationView {
             List (
-                network.course.identified(by: \.name)
+                networkManager.courses.identified(by: \.name)
             ) { course in
-                
                 CourseRowView(course: course)
                 
-            }.navigationBarTitle(Text("Course"))
+                }.navigationBarTitle(Text("Courses"))
         }
     }
 }

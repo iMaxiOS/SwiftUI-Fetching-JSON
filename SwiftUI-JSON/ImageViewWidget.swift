@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ImageViewWidget: View {
     
@@ -17,6 +18,8 @@ struct ImageViewWidget: View {
     }
     
     var body: some View {
-        Image(uiImage: UIImage(data: imageLoader.data)!)
+        Image(uiImage: (imageLoader.data.count == 0) ? UIImage(named: "trees")! : UIImage(data: imageLoader.data)!)
+            .resizable()
+            .frame(width: UIScreen.main.bounds.width - 40, height: 180)
     }
 }

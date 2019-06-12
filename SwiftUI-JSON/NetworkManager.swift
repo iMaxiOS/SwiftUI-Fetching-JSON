@@ -12,7 +12,7 @@ import Combine
 class NetworkManager: BindableObject {
     var didChange = PassthroughSubject<NetworkManager, Never>()
     
-    var course = [Course]() {
+    var courses = [Course]() {
         didSet {
             didChange.send(self)
         }
@@ -25,10 +25,9 @@ class NetworkManager: BindableObject {
             
             let courses = try! JSONDecoder().decode([Course].self, from: data)
             DispatchQueue.main.async {
-                self.course = courses
-            }
-            
-            print("cool url adress")
+                self.courses = courses
+        }
+            print("completed fetching json")
         }.resume()
     }
 }

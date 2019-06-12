@@ -10,7 +10,6 @@ import SwiftUI
 import Combine
 
 class ImageLoader: BindableObject {
-    
     var didChange = PassthroughSubject<Data, Never>()
     
     var data = Data() {
@@ -23,14 +22,12 @@ class ImageLoader: BindableObject {
         
         guard let url = URL(string: imageUrl) else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            
             guard let data = data else { return }
             
             DispatchQueue.main.async {
                 self.data = data
             }
             
-        }.resume()
-        
+            }.resume()
     }
 }
