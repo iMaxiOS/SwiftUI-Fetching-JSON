@@ -16,8 +16,10 @@ struct ContentView : View {
         NavigationView {
             List (
                 network.course.identified(by: \.name)
-            ) {
-                Text($0.name)
+            ) { course in
+                
+                CourseRowView(course: course)
+                
             }.navigationBarTitle(Text("Course"))
         }
     }
