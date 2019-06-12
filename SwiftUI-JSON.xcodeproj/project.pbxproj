@@ -13,6 +13,8 @@
 		AC44C84122B1685200A7EA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC44C84022B1685200A7EA15 /* Assets.xcassets */; };
 		AC44C84422B1685200A7EA15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC44C84322B1685200A7EA15 /* Preview Assets.xcassets */; };
 		AC44C84722B1685200A7EA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC44C84522B1685200A7EA15 /* LaunchScreen.storyboard */; };
+		AC44C84F22B16C0900A7EA15 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44C84E22B16C0900A7EA15 /* Course.swift */; };
+		AC44C85122B16E2500A7EA15 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC44C85022B16E2500A7EA15 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC44C84322B1685200A7EA15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC44C84622B1685200A7EA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC44C84822B1685200A7EA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC44C84E22B16C0900A7EA15 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		AC44C85022B16E2500A7EA15 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				AC44C83A22B1685100A7EA15 /* AppDelegate.swift */,
 				AC44C83C22B1685100A7EA15 /* SceneDelegate.swift */,
 				AC44C83E22B1685100A7EA15 /* ContentView.swift */,
+				AC44C84E22B16C0900A7EA15 /* Course.swift */,
+				AC44C85022B16E2500A7EA15 /* NetworkManager.swift */,
 				AC44C84022B1685200A7EA15 /* Assets.xcassets */,
 				AC44C84522B1685200A7EA15 /* LaunchScreen.storyboard */,
 				AC44C84822B1685200A7EA15 /* Info.plist */,
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC44C84F22B16C0900A7EA15 /* Course.swift in Sources */,
 				AC44C83B22B1685100A7EA15 /* AppDelegate.swift in Sources */,
+				AC44C85122B16E2500A7EA15 /* NetworkManager.swift in Sources */,
 				AC44C83D22B1685100A7EA15 /* SceneDelegate.swift in Sources */,
 				AC44C83F22B1685100A7EA15 /* ContentView.swift in Sources */,
 			);

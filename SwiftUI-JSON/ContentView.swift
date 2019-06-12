@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView : View {
+    
+    @State var network = NetworkManager()
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            List (
+                network.course.identified(by: \.name)
+            ) {
+                Text($0.name)
+            }.navigationBarTitle(Text("Course"))
+        }
     }
 }
 
